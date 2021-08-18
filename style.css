@@ -1,0 +1,16 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.contenedor-figuras{
+    background-color: aqua;
+    height: 200px;
+    width: 200px;
+}
+
+.contenedor-figuras .figura-geometrica img{
+    height: 10px;
+    width: 10px;
+
+}
