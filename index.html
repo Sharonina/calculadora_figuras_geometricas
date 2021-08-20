@@ -1,36 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Figuras Geométricas</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <header>
-        <h1>Figuras Geométricas</h1>
-    </header>
-    <main>
-        <h2>Calcula el área y perimetro</h2>
-        <div class="contendor-figuras">
-            <div class="figura-geometrica">
-                <img src="imagenes/figuras_proyectojs_cuadrado.svg" alt="">
-            </div>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Figuras Geométricas</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <header>
+            <h1>Figuras Geométricas</h1>
+        </header>
+        <main>
+            <h2>Calcula el área y perimetro</h2>
             <div>
-                <span>Lado</span>
-                <input id="InputCuadrado" type="number">
-                <div>
-                    <button type="button" onclick="calcularAreaCuadrado()">Calcular área</button>
-                <button type="button" onclick="calcularPerimetroCuadrado()">Calcular perímetro</button>
+                <div class="contendor-figura">
+                    <div class="figura-geometrica">
+                        <img
+                            src="imagenes/figuras_proyectojs_cuadrado.svg"
+                            alt=""
+                        />
+                    </div>
+                    <div class="medidas-figura">
+                        <p>Medidas</p>
+                        <span>Lado</span>
+                        <input id="InputCuadrado" type="number" />
+                        <span>cm</span>
+                        <div class="boton-calcular">
+                            <button
+                                type="button"
+                                onclick="calcularAreaYPerimetro('cuadrado')"
+                            >
+                                CALCULAR
+                            </button>
+                        </div>
+                        <div class="medidas-area">
+                            <span>Área:</span>
+                            <span id="resultadoArea">10</span>
+                        </div>
+                        <div class="medidas-perimetro">
+                            <span>Perímetro:</span>
+                            <span id="resultadoPerimetro">10</span>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div>
-            <span>Resultado:</span>
-            <span id='resultado'></span>
-        </div>
-    </main>
-    <script src="./figura.js"></script>
-</body>
+        </main>
+        <script src="./figura.js"></script>
+    </body>
 </html>

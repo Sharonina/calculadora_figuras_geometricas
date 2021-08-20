@@ -83,7 +83,7 @@ console.groupEnd();
 
 /* Interactuando con HTML */
 
-const resultado = document.getElementById('resultado')
+/* const resultado = document.getElementById('resultado')
 
 function calcularAreaCuadrado(){
     const input = document.getElementById("InputCuadrado");
@@ -91,8 +91,40 @@ function calcularAreaCuadrado(){
 
     const area = areaCuadrado(value);
     resultado.innerHTML = area
-    /* alert (area);  */
+    // alert (area);  
+} */
 
+/* function calcularPerimetroCuadrado(){
+    const input = document.getElementById("InputCuadrado");
+    const value = input.value;
+
+    const perimetro = perimetroCuadrado(value);
+    resultado.innerHTML = perimetro
+    // alert (perimetro);  
+}
+ */
+
+const resultadoArea = document.getElementById('resultadoArea');
+const resultadoPerimetro = document.getElementById('resultadoPerimetro');
+
+function calcularAreaYPerimetro(figura){
+    if(figura === 'cuadrado'){
+        calcularAreaCuadrado()
+        calcularPerimetroCuadrado()
+    }else if(figura === 'triangulo'){
+
+    }
+    
+}
+
+// Logica cuadrado
+
+function calcularAreaCuadrado(){
+    const input = document.getElementById("InputCuadrado");
+    const value = input.value;
+
+    const area = areaCuadrado(value);
+    resultadoArea.innerHTML = area
 }
 
 function calcularPerimetroCuadrado(){
@@ -100,10 +132,10 @@ function calcularPerimetroCuadrado(){
     const value = input.value;
 
     const perimetro = perimetroCuadrado(value);
-    resultado.innerHTML = perimetro
-    /* alert (perimetro);  */
+    resultadoPerimetro.innerHTML = perimetro
 }
 
+// Logica triangulo
 
 
 
