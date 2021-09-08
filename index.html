@@ -13,7 +13,7 @@
         </header>
         <main>
             <h2>Calcula el área y perimetro</h2>
-            <div>
+            <div class="contenedor-contenedores">
                 <div class="contendor-figura">
                     <div class="figura-geometrica">
                         <img
@@ -23,9 +23,21 @@
                     </div>
                     <div class="medidas-figura">
                         <p>Medidas</p>
-                        <span>Lado</span>
-                        <input id="InputCuadrado" type="number" />
-                        <span>cm</span>
+                        <div class="ingreso-datos">
+                            <span>Lado</span>
+                            <input id="InputCuadrado" type="number" />
+                            <span>cm</span>
+                        </div>
+                        <div class="resultados-medidas">
+                            <div class="medidas-area">
+                                <span class="area-titulo">Área:</span>
+                                <span id="resultadoArea"></span>
+                            </div>
+                            <div class="medidas-perimetro">
+                                <span class="perimetro-titulo">Perímetro:</span>
+                                <span id="resultadoPerimetro"></span>
+                            </div>
+                        </div>
                         <div class="boton-calcular">
                             <button
                                 type="button"
@@ -34,13 +46,73 @@
                                 CALCULAR
                             </button>
                         </div>
-                        <div class="medidas-area">
-                            <span>Área:</span>
-                            <span id="resultadoArea">10</span>
+                    </div>
+                </div>
+                <div class="contendor-figura">
+                    <div class="figura-geometrica">
+                        <img
+                            src="imagenes/figuras_proyectojs_circulo.svg"
+                            alt=""
+                        />
+                    </div>
+                    <div class="medidas-figura">
+                        <p>Medidas</p>
+                        <div class="ingreso-datos">
+                            <span>Lado</span>
+                            <input id="InputCuadrado" type="number" />
+                            <span>cm</span>
                         </div>
-                        <div class="medidas-perimetro">
-                            <span>Perímetro:</span>
-                            <span id="resultadoPerimetro">10</span>
+                        <div class="resultados-medidas">
+                            <div class="medidas-area">
+                                <span class="area-titulo">Área:</span>
+                                <span id="resultadoArea"></span>
+                            </div>
+                            <div class="medidas-perimetro">
+                                <span class="perimetro-titulo">Perímetro:</span>
+                                <span id="resultadoPerimetro"></span>
+                            </div>
+                        </div>
+                        <div class="boton-calcular">
+                            <button
+                                type="button"
+                                onclick="calcularAreaYPerimetro('cuadrado')"
+                            >
+                                CALCULAR
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="contendor-figura">
+                    <div class="figura-geometrica">
+                        <img
+                            src="imagenes/figuras_proyectojs_triangulo.svg"
+                            alt=""
+                        />
+                    </div>
+                    <div class="medidas-figura">
+                        <p>Medidas</p>
+                        <div class="ingreso-datos">
+                            <span>Lado</span>
+                            <input id="InputCuadrado" type="number" />
+                            <span>cm</span>
+                        </div>
+                        <div class="resultados-medidas">
+                            <div class="medidas-area">
+                                <span class="area-titulo">Área:</span>
+                                <span id="resultadoArea"></span>
+                            </div>
+                            <div class="medidas-perimetro">
+                                <span class="perimetro-titulo">Perímetro:</span>
+                                <span id="resultadoPerimetro"></span>
+                            </div>
+                        </div>
+                        <div class="boton-calcular">
+                            <button
+                                type="button"
+                                onclick="calcularAreaYPerimetro('cuadrado')"
+                            >
+                                CALCULAR
+                            </button>
                         </div>
                     </div>
                 </div>
